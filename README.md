@@ -37,6 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Project Structure
 
+```
 /my-fullstack-app
 │
 ├── /backend # Node.js + Express backend
@@ -74,3 +75,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ├── /docs # Documentation (e.g., API docs)
 │
 └── README.md # Project overview and instructions
+```
