@@ -38,41 +38,46 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Project Structure
 
 ```
-/my-fullstack-app
 │
-├── /backend # Node.js + Express backend
-│ ├── /config # Configuration files (e.g., Firebase admin SDK)
-│ │ └── firebase.js
-│ ├── /controllers # Express route handlers
-│ │ └── authController.js
-│ ├── /routes # Express route definitions
-│ │ └── authRoutes.js
-│ ├── /middlewares # Express middlewares (e.g., authentication checks)
-│ ├── /models # Mongoose models (if using MongoDB)
-│ ├── app.js # Main entry point for the Express server
-│ ├── package.json # Node.js dependencies and scripts
-│ └── .env # Environment variables
+├── /backend                 # Node.js + Express backend
+│   ├── /config              # Configuration files (e.g., Firebase admin SDK)
+│   │   └── firebase.js
+│   ├── /controllers         # Express route handlers
+│   │   └── authController.js
+│   ├── /routes              # Express route definitions
+│   │   └── authRoutes.js
+│   ├── /middlewares         # Express middlewares (e.g., authentication checks)
+│   ├── /models              # Mongoose models (if using MongoDB)
+│   ├── app.js               # Main entry point for the Express server
+│   ├── package.json         # Node.js dependencies and scripts
+│   └── .env                 # Environment variables
 │
-├── /frontend # React + Next.js frontend
-│ ├── /components # React components
-│ │ ├── Login.js
-│ │ ├── Register.js
-│ │ └── Navbar.js
-│ ├── /pages # Next.js pages
-│ │ ├── \_app.js # Custom App component
-│ │ ├── index.js # Home page
-│ │ ├── login.js # Login page
-│ │ └── register.js # Register page
-│ ├── /public # Static files (e.g., images)
-│ ├── /styles # CSS/SCSS files
-│ ├── /utils # Utility functions (e.g., Firebase client SDK setup)
-│ │ └── firebase.js
-│ ├── package.json # React + Next.js dependencies and scripts
-│ └── next.config.js # Next.js configuration
+├── /frontend                # React + Next.js frontend
+│   ├── /components          # React components
+│   │   ├── Login.js
+│   │   ├── Register.js
+│   │   └── Navbar.js
+│   ├── /context             # React Context for global state management
+│   │   └── AuthContext.js
+│   ├── /hooks               # Custom hooks
+│   │   ├── useAuth.js
+│   │   └── useFetch.js
+│   ├── /pages               # Next.js pages
+│   │   ├── _app.js          # Custom App component
+│   │   ├── index.js         # Home page
+│   │   ├── login.js         # Login page
+│   │   └── register.js      # Register page
+│   ├── /public              # Static files (e.g., images)
+│   ├── /styles              # CSS/SCSS files
+│   ├── /utils               # Utility functions (e.g., Firebase client SDK setup)
+│   │   └── firebase.js
+│   ├── package.json         # React + Next.js dependencies and scripts
+│   └── next.config.js       # Next.js configuration
 │
-├── /scripts # Optional scripts (e.g., build scripts)
+├── /scripts                 # Optional scripts (e.g., build scripts)
 │
-├── /docs # Documentation (e.g., API docs)
+├── /docs                    # Documentation (e.g., API docs)
 │
-└── README.md # Project overview and instructions
+└── README.md                # Project overview and instructions
+
 ```
